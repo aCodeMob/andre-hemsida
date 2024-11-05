@@ -1,0 +1,199 @@
+:root {
+  /*** FONT SIZES ***/
+  /* px, px, px, px, px, px */
+  --font-size-: ;
+
+  /*** COLORS ***/
+  --color-body: hsl(175, 11%, 39%);
+  --color-heading: hsl(170, 81%, 54%);
+  --color-heading-secondary: rgb(23, 37, 34);
+
+  --color-header-links: hsl(168, 100%, 97%);
+
+  --color-bg-sections: hsl(162, 10%, 20%);
+  --color-border-sections: hsl(162, 17%, 50%);
+
+  /* BORDER RADIUS */
+  --border-radius-large: 0 0 38px 38px;
+
+  /* SHADOWS */
+  --shadow-header: 0 9px 20px rgba(0, 22, 14, 0.5);
+}
+
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: var(--color-body);
+  line-height: 1.1;
+}
+
+/* HEADER */
+.header {
+  background-image: linear-gradient(to right, #08221f, #223b38);
+  height: 320px;
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-header);
+
+  position: relative;
+}
+
+.header-heading {
+  color: var(--color-heading);
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 64px;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+.header img {
+  position: absolute; /* Position the image absolutely within the header */
+  bottom: calc(-58px + (100% - 320px)); /* Adjust based on header height */
+
+  left: 50%; /* Centers the image horizontally */
+  transform: translateX(-50%); /* Shifts the image to truly center it */
+  max-width: 200px; /* Limits the width of the image to 50% of the container width */
+  max-block-size: auto; /* Ensures the image does not exceed the height of the header */
+}
+
+.heading-secondary {
+  color: var(--color-heading-secondary);
+  font-size: 2.6rem;
+  text-align: center;
+  margin-block-end: 3px;
+}
+
+/* NAV HEADER */
+.nav-header {
+  margin-block-end: 200px;
+}
+
+.nav-header ul {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-link {
+  color: var(--color-header-links);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: revert;
+}
+
+/* SECTION MY MUSIC */
+.section-my-music {
+  margin-block-end: 200px;
+}
+
+.my-songs {
+  background-color: var(--color-bg-sections);
+  border-top: 5px solid var(--color-border-sections);
+  border-bottom: 5px solid var(--color-border-sections);
+  padding: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* SECTION MUSIC */
+/* .section-music {
+  margin-block-end: 100px;
+}
+
+.songs {
+  background-color: hsl(162, 10%, 20%);
+  border-top: 5px solid hsl(162, 17%, 50%);
+  border-bottom: 5px solid hsl(162, 17%, 50%);
+  padding: 70px;
+} */
+
+/* PHOTOS */
+.section-photos {
+}
+
+.photos-wrapper {
+  background-color: var(--color-bg-sections);
+  border-top: 5px solid var(--color-border-sections);
+  border-bottom: 5px solid var(--color-border-sections);
+  padding: 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 70px;
+}
+
+.img-wrapper-jobb {
+  width: 380px;
+  height: 380px;
+}
+
+.img-wrapper-jobb img {
+  border-radius: 6px;
+  margin-block-end: 4px;
+}
+
+.img-wrapper-jobb figcaption {
+  font-size: 1.3rem;
+  color: white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  padding: 4px;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-80rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateX(-80rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
