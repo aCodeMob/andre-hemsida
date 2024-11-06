@@ -123,7 +123,7 @@ main {
   .recept-img-wrapper {
     width: 100%; /* Make the image wrapper full width */
     height: auto; /* Adjust height automatically */
-    margin-block-end: 30px;
+    margin-block-end: 50px;
   }
 
   .recept-title {
