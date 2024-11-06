@@ -84,3 +84,67 @@ main {
 .recept-steg h3 {
   margin-block-end: 6px;
 }
+
+/* General Media Query for Tablets and iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .recept-gul-kyckling {
+    max-width: 600px;
+    padding: 40px;
+    margin-block: 50px;
+  }
+
+  .recept-img-wrapper {
+    width: 500px;
+    height: 500px;
+  }
+
+  .recept-title {
+    font-size: 1.5rem;
+  }
+
+  .tid-portioner {
+    font-size: 1rem;
+    gap: 16px;
+  }
+
+  .recept-steg {
+    gap: 30px;
+  }
+}
+
+/* General Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  .recept-gul-kyckling {
+    max-width: 90%; /* Use a percentage to fit better on smaller screens */
+    padding: 30px;
+    margin-block: 30px;
+  }
+
+  .recept-img-wrapper {
+    width: 100%; /* Make the image wrapper full width */
+    height: auto; /* Adjust height automatically */
+  }
+
+  .recept-title {
+    font-size: 1.3rem;
+  }
+
+  .tid-portioner {
+    font-size: 0.9rem;
+    flex-direction: column; /* Stack time and portions vertically */
+    gap: 10px;
+  }
+
+  .recept-steg {
+    flex-direction: column; /* Stack the steps vertically */
+    gap: 20px;
+  }
+
+  .wrapper-ingredienser ul {
+    gap: 4px; /* Reduce the gap between ingredient items */
+  }
+
+  .wrapper-tillagning ol {
+    gap: 10px; /* Reduce the gap between preparation steps */
+  }
+}
