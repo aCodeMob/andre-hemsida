@@ -133,8 +133,8 @@ body {
 }
 
 .img-wrapper-jobb {
-  width: 380px;
-  height: 380px;
+  max-width: 380px;
+  height: auto;
 }
 
 .img-wrapper-jobb img {
@@ -195,5 +195,78 @@ body {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+/* General Media Query for Tablets and iPads */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust font sizes for better readability */
+  .header-heading {
+    font-size: 3.5rem;
+    padding-top: 40px;
+  }
+
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+
+  /* Adjust the header image size */
+  .header img {
+    max-width: 180px;
+  }
+
+  /* Adjust the layout for sections */
+  .my-songs,
+  .photos-wrapper {
+    padding: 50px;
+    gap: 40px;
+  }
+
+  .photos-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
+  }
+}
+
+/* General Media Query for Mobile Phones */
+@media (max-width: 480px) {
+  /* Font size adjustments for smaller screens */
+  .header-heading {
+    font-size: 2.5rem;
+    padding-top: 30px;
+  }
+
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+
+  /* Adjust the header image size */
+  .header img {
+    max-width: 150px;
+  }
+
+  /* Navigation adjustments */
+  .nav-header ul {
+    font-size: 1rem;
+    gap: 40px;
+  }
+
+  /* Adjust section padding and layout */
+  .my-songs,
+  .photos-wrapper {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .photos-wrapper {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .img-wrapper-jobb {
+    max-width: 280px;
+    margin-block-end: 20px;
+  }
+
+  .img-wrapper-jobb figcaption {
+    font-size: 1rem;
   }
 }
