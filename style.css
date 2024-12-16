@@ -45,15 +45,15 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-.header img {
-  position: absolute; /* Position the image absolutely within the header */
-  bottom: calc(-58px + (100% - 320px)); /* Adjust based on header height */
+/* .header img {
+  position: absolute;
+  bottom: calc(-58px + (100% - 320px));
 
-  left: 50%; /* Centers the image horizontally */
-  transform: translateX(-50%); /* Shifts the image to truly center it */
-  max-width: 200px; /* Limits the width of the image to 50% of the container width */
-  max-block-size: auto; /* Ensures the image does not exceed the height of the header */
-}
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 200px;
+  max-block-size: auto;
+} */
 
 .heading-secondary {
   color: var(--color-heading-secondary);
@@ -80,10 +80,6 @@ body {
 .header-link {
   color: var(--color-header-links);
   text-decoration: none;
-}
-
-.nrj {
-  transform: translateX(180px);
 }
 
 .header-link:hover {
