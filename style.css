@@ -82,6 +82,10 @@ body {
   text-decoration: none;
 }
 
+.nrj {
+  transform: translateX(180px);
+}
+
 .header-link:hover {
   text-decoration: revert;
 }
