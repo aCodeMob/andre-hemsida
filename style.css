@@ -4,11 +4,11 @@
   --font-size-: ;
 
   /*** COLORS ***/
-  --color-body: hsl(175, 11%, 39%);
-  --color-heading: hsl(170, 81%, 54%);
-  --color-heading-secondary: rgb(23, 37, 34);
+  --color-body: #63250e;
+  --color-heading: hsl(96, 77%, 27%);
+  --color-heading-secondary: hsl(96, 63%, 42%);
 
-  --color-header-links: hsl(168, 100%, 97%);
+  --color-header-links: hsl(96, 84%, 59%);
 
   --color-bg-sections: hsl(162, 10%, 20%);
   --color-border-sections: hsl(162, 17%, 50%);
@@ -28,7 +28,7 @@ body {
 
 /* HEADER */
 .header {
-  background-image: linear-gradient(to right, #08221f, #223b38);
+  background-color: #fb4242;
   height: 320px;
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow-header);
@@ -45,15 +45,13 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-/* .header img {
-  position: absolute;
-  bottom: calc(-58px + (100% - 320px));
+.header img {
+  transform: scale(0.6);
 
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 200px;
-  max-block-size: auto;
-} */
+  position: absolute;
+  left: 50px;
+  top: -120px;
+}
 
 .heading-secondary {
   color: var(--color-heading-secondary);
@@ -102,8 +100,43 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  position: relative;
 }
 
+.audio-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+audio {
+  background-color: #fb4242;
+  border: 2px solid #7cff48;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+audio:focus {
+  outline: none;
+  border-color: #008cba; /* Highlight border on focus */
+}
+
+.xmas-tree-left {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+
+.xmas-tree-right {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
 /* SECTION MUSIC */
 /* .section-music {
   margin-block-end: 100px;
