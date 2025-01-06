@@ -28,7 +28,7 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #0077b6;
+  background-color: #0077b5;
   height: 320px;
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow-header);
