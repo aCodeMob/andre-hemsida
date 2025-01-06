@@ -4,11 +4,11 @@
   --font-size-: ;
 
   /*** COLORS ***/
-  --color-body: #63250e;
-  --color-heading: hsl(96, 77%, 27%);
-  --color-heading-secondary: hsl(96, 63%, 42%);
+  --color-body: #90e0ef;
+  --color-heading: #03045e;
+  --color-heading-secondary: #03045e;
 
-  --color-header-links: hsl(96, 84%, 59%);
+  --color-header-links: #023e8a;
 
   --color-bg-sections: hsl(162, 10%, 20%);
   --color-border-sections: hsl(162, 17%, 50%);
@@ -28,19 +28,38 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #fb4242;
+  background-color: #0077b6;
   height: 320px;
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow-header);
 
+  display: grid;
+  place-items: center;
+
   position: relative;
+
+  .snow-icon-left {
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    left: 550px;
+  }
+
+  .snow-icon-right {
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    right: 550px;
+  }
 }
 
 .header-heading {
   color: var(--color-heading);
   font-size: 4rem;
   text-align: center;
-  padding-top: 64px;
+  padding: 60px;
 
   animation: moveInLeft 1s ease-out;
 }
@@ -113,7 +132,7 @@ body {
 }
 
 audio {
-  background-color: #fb4242;
+  background-color: #023e8a;
   border: 2px solid #7cff48;
   border-radius: 10px;
   padding: 10px;
@@ -258,6 +277,10 @@ audio:focus {
   .photos-wrapper {
     grid-template-columns: repeat(2, 1fr); /* Adjust grid layout */
   }
+
+  svg {
+    display: none;
+  }
 }
 
 /* General Media Query for Mobile Phones */
@@ -301,5 +324,9 @@ audio:focus {
 
   .img-wrapper-jobb figcaption {
     font-size: 1rem;
+  }
+
+  svg {
+    display: none;
   }
 }
