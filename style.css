@@ -4,13 +4,13 @@
   --font-size-: ;
 
   /*** COLORS ***/
-  --color-body: #90e0ef;
+  --color-body: #4c8c97;
   --color-heading: #03045e;
   --color-heading-secondary: #03045e;
 
   --color-header-links: #023e8a;
 
-  --color-bg-sections: hsl(162, 10%, 20%);
+  --color-bg-sections: #04467c;
   --color-border-sections: hsl(162, 17%, 50%);
 
   /* BORDER RADIUS */
@@ -44,6 +44,8 @@ body {
 
     position: absolute;
     left: 550px;
+
+    animation: spinningSnow 20s infinite;
   }
 
   .snow-icon-right {
@@ -52,6 +54,8 @@ body {
 
     position: absolute;
     right: 550px;
+
+    animation: spinningSnow 20s infinite;
   }
 }
 
@@ -170,6 +174,29 @@ audio:focus {
 
 /* PHOTOS */
 .section-photos {
+  position: relative;
+}
+
+.cloud-left {
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  left: 230px;
+  top: 930px;
+
+  animation: movingCloudLeft 12s ease infinite;
+}
+
+.cloud-right {
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  right: 230px;
+  top: 930px;
+
+  animation: movingCloudRight 12s ease infinite;
 }
 
 .photos-wrapper {
@@ -247,6 +274,39 @@ audio:focus {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes spinningSnow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes movingCloudLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes movingCloudRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
