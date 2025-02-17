@@ -4,12 +4,9 @@
   --font-size-: ;
 
   /*** COLORS ***/
-  --color-body: #4594dd;
-  --color-heading: #03045e;
+  --color-body: #539c96;
+  --color-heading: #52f3ff;
   --color-heading-secondary: #03045e;
-
-  --color-bg-sections: #10853d;
-  --color-border-sections: hsl(118, 100%, 20%);
 
   /* BORDER RADIUS */
   --border-radius-large: 0 0 38px 38px;
@@ -26,33 +23,16 @@ body {
 
 /* HEADER */
 .header {
-  background-color: #4bc453;
+  background-color: #1b3355;
   height: 320px;
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow-header);
+  margin-block-end: 40px;
 
   display: grid;
   place-items: center;
 
   position: relative;
-
-  .snow-icon-left {
-    width: 120px;
-    height: 120px;
-
-    position: absolute;
-    left: 550px;
-  }
-
-  .snow-icon-right {
-    width: 120px;
-    height: 120px;
-
-    position: absolute;
-    right: 550px;
-
-    animation: spinningSnow 20s infinite;
-  }
 }
 
 .header-heading {
@@ -99,7 +79,7 @@ body {
 }
 
 .recept {
-  color: brown;
+  color: rgb(212, 210, 82);
 }
 
 .nrj {
@@ -120,9 +100,7 @@ body {
 }
 
 .my-songs {
-  background-color: var(--color-bg-sections);
-  border-top: 5px solid var(--color-border-sections);
-  border-bottom: 5px solid var(--color-border-sections);
+  background-color: #1b3355;
   padding: 70px;
 
   display: flex;
@@ -153,7 +131,7 @@ audio {
 
 audio:focus {
   outline: none;
-  border-color: #008cba; /* Highlight border on focus */
+  border-color: #008cba;
 }
 
 .xmas-tree-left {
@@ -185,9 +163,9 @@ audio:focus {
 }
 
 .photos-wrapper {
-  background-color: var(--color-bg-sections);
-  border-top: 5px solid var(--color-border-sections);
-  border-bottom: 5px solid var(--color-border-sections);
+  background-color: #1b3355;
+  /* border-top: 5px solid  */
+  /* border-bottom: 5px solid  */
   padding: 80px;
 
   display: grid;

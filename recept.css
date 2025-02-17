@@ -81,6 +81,10 @@ main {
   gap: 14px;
 }
 
+ol ::marker {
+  font-weight: bold;
+}
+
 .recept-steg h3 {
   margin-block-end: 6px;
 }
